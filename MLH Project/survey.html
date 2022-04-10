@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environnmental Impact Survey</title>
+</head>
+<style>
+
+.call { 
+   margin-left: 40%;  
+   margin-right: 40%; 
+}
+
+    body {
+        background: green;
+        font-size: 15px;
+         font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .dropdown { 
+        position: relative; 
+        Display: inline-block; 
+    }
+
+    .inside {
+        display: none; 
+        background-color: darkgreen; 
+        z-index: 1; 
+        width: 150px; 
+        padding: 14px 16px; 
+    }
+
+    .submitbutton { 
+        padding: 15px 32px;
+  border: none;
+  text-align: center;
+  display: inline-block; 
+  font-size: 14px; 
+  color: green; 
+  background-color: rgb(53, 58, 56);
+  margin-left: 25%; 
+  margin-right: auto;
+    }
+
+    button:hover{
+  padding: 15px 32px;
+  border: none;
+  text-align: center;
+  display: inline-block; 
+  font-size: 14px; 
+  color: green; 
+  background-color: rgb(16, 99, 14);
+}
+    
+    
+</style> 
+<body>
+    <div class="call">
+    <div class="surveyinstructions">
+        <h1>Please fill out the questionnaire.</h1>
+    </div>
+    <!--Email Typing Space-->
+    <div class="email"> 
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email">
+    </div><br>
+    <!--Survey-->
+        <div class="dropdown">
+            <label for="states">Which state do you reside in?</label>
+
+            <select name="states" id="states">
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AS">AS</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="DC">DC</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="GU">GU</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MD">MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MS">MS</option>
+                <option value="MO">MO</option>
+                <option value="MT">MT</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NY">NY</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="MP">MP</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="PR">PR</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="VI">VI</option>
+                <option value="WA">WA</option>
+                <option value="WV">WV</option>
+                <option value="WI">WI</option>
+                <option value="WY">WY</option>
+            </select>
+        </div>
+        <br>
+        <br>
+
+
+        <div class="zipcode">
+            <label for="email">Zip Code</label><br>
+        <input type="zipcode" name="Zip" id="zipcode">
+        </div><br><br>
+
+        <div class="plants">
+            <label for="plants">How many plants do you own?</label><br>
+        <input type="plants" name="plants" id="plants">
+        </div><br><br>
+
+        <div class="months">
+            <label for="months">How many months do they grow each year?</label><br>
+        <input type="months" name="months" id="months">
+        </div><br><br>
+
+        <div class="plants">
+            <label for="plants">How many plants do you own?</label><br>
+        <input type="plants" name="plants" id="plants">
+        </div><br><br>
+
+        <div class="mpg">
+            <label for="mpg">How many mpg does your car get?</label><br>
+        <input type="mpg" name="mpg" id="mpg">
+        </div><br><br>
+
+        <div class="miles">
+            <label for="miles">How many miles do you drive your car?</label><br>
+        <input type="miles" name="miles" id="miles">
+        </div><br><br>
+
+        <div class="pt">
+            <label for="pt">How many miles of public transportation do you take each year?</label><br>
+        <input type="pt" name="pt" id="pt">
+        </div><br><br>
+
+        <div class="alternatetravel">
+            <label for="alt">How many miles do you bike, run, or skate each year?</label><br>
+        <input type="alt" name="alt" id="alt">
+        </div><br><br>
+
+        <div class="trashbags">
+            <label for="trash">How many bags of trash do you throw out per week?</label><br>
+        <input type="trash" name="trash" id="trash">
+        </div><br><br>
+
+        <div class="volume">
+            <label for="vol">How big are your trash bags in gallons?</label><br>
+        <input type="vol" name="vol" id="vol">
+        </div><br><br>
+
+        <div class="recycle">
+            <label for="recycle">How much do you recycle each week in recycling bins?</label><br>
+        <input type="recycle" name="recycle" id="recycle">
+        </div><br><br>
+
+        <div class="bin">
+            <label for="bin">What is the volume of your recycling bin in gallons?</label><br>
+        <input type="bin" name="bin" id="bin">
+        </div><br><br>
+
+        <div class="solar">
+            <label for="solar">How many kw/hr do you generate in solar energy annually?</label><br>
+        <input type="solar" name="solar" id="solar">
+        </div><br><br>
+
+        <div class="water">
+            <label for="water">How many gallons of water do you use each day?</label><br>
+        <input type="water" name="water" id="water">
+        </div><br><br>
+
+        <!--Submit Button-->
+        <div class = "button"> 
+            <button onclick="location.pathname='thankyou.html'" class="submitbutton" input type ="submit" formmethod="get">Submit</button><br>
+        </div>
+    </div>
+</body>
+</html>
